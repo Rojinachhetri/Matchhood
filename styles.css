@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ff5a8d;
+    color: white;
+    position: relative;
+}
+
+.contact-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-size: 16px;
+}
+
+.help-support {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contact-infom {
+    display: flex;
+    align-items: center; 
+    gap: 24px;
+    font-size: 16px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.contact-infom i {
+    margin-right: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 24px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    color: #213366;
+    font-size: 24px;
+    font-family: Cinzel Decorative;
+    font-weight: bold;
+}
+
+.logo h1 span {
+    color: #ff5a8d;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    font-family: Poppins;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #213366;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #ff5a8d;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('./Assets/about.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 50px;
+    height: 400px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    max-width: 1000px;
+    margin: auto;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.statistics {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #FFF5F5;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 30px;
+    font-size: 24px;
+    color: #ff5a8d;
+}
+
+.stat i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.stat h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.about-section {
+    display: flex;
+    max-width: fit-content;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px 40px;
+}
+
+.about-section img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.text-content {
+    padding: 40px;
+    text-align: center;
+}
+
+.text-content h2 {
+    font-family: cursive;
+    font-size: 36px;
+    margin: 0;
+    color: #1c2e7a;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.history-section,
+.faq-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.history-section h2,
+.faq-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #213366;
+    font-family: cursive;
+}
+
+.history-section p,
+.faq-section p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #1c2e7a;
+    margin-bottom: 30px;
+    font-family: cursive;
+}
+
+.faq {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.faq .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.faq .question:hover {
+    color: #1c2e7a;
+}
+
+.faq .answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.view-more-btn {
+    display: block;
+    margin: 40px auto 0 auto;
+    padding: 12px 24px;
+    background-color: #ff5a8d;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    width: 120px;
+}
+
+.view-more-btn:hover {
+    background-color: #1c2e7a;
+}
+
+.footer {
+    background-color: #ffe8e8;
+    padding: 40px 20px;
+    color: #333;
+    border-top: 3px solid #ff5a8d;
+}
+
+.footer .container {
+     display: flex;  
+    justify-content: space-between; 
+    flex-direction: row;
+}
+
+
+.footer .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.contact-info {
+    flex-direction: column;
+  display: flex;
+    justify-content: space-between;
+}
+
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1c2e7a;
+    font-weight: 600;
+}
+
+.footer p,
+.footer a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer p:hover,
+.footer a:hover {
+    color: #1c2e7a;
+}
+
+.footer .social-media a {
+    flex:1;
+    display: inline-block;
+    margin: 25px;
+    font-size: 24px;
+    color: #333;
+   
+}
+
+.footer .social-media a:hover {
+    color: #ff5a8d;
+}
+
+.footer .social-media i {
+    font-size: 24px;
+    color:#ff5a8d;
+}
+
+.footer .social-media i:hover {
+    color:#ff5a8d;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #ff5a8d;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer .divider {
+    width: 1px;
+    background-color: #333;
+    height: 300px;
+    margin: 0 20px;
+}
+
+.newsletter {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.newsletter input[type="email"] {
+    
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter button {
+    width: 100px;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff5a8d;
+    color: #fff;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color:#213366
+}
